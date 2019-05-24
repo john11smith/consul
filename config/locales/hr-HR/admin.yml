@@ -1,0 +1,274 @@
+hr:
+  admin:
+    header:
+      title: Administracija
+    actions:
+      actions: Djelovanja
+      confirm: Jeste li sigurni?
+      confirm_hide: Potvrdi izmjene
+      hide: Sakrij
+      hide_author: Sakrij autora
+      restore: Obnovi
+      mark_featured: Istaknuto
+      unmark_featured: Neoznačeno istaknuto
+      edit: Uredi
+      configure: Konfiguriraj
+      delete: Izbriši
+    officing_booth:
+      title: "Odjavljujete glasačko mjesto locirano na %{booth}. Ako ovo nije točno molimo vas da nastavite i nazovete pomoćni broj. Hvala vam."
+    banners:
+      index:
+        title: Zastave
+        create: Stvori zastave
+        edit: Uredi zastavu
+        delete: Obriši zastavu
+        filters:
+          all: Svi
+          with_active: Aktivirati
+          with_inactive: Neaktivan
+        preview: Pregled
+      banner:
+        title: Naziv
+        description: Opis
+        target_url: Poveznica
+        post_started_at: Post je počeo s
+        post_ended_at: Post je završio s
+        sections_label: Odjeljci gdje će se pojaviti
+        sections:
+          homepage: Glavna stranica
+          debates: Rasprave
+          proposals: Prijedlozi
+          budgets: Participativno budžetiranje
+          help_page: Stranica za pomoć
+      edit:
+        editing: Uredi zastavu
+        form:
+          submit_button: Spremi promjene
+      errors:
+        form:
+          error:
+            one: "greška ne dozvoljava ovoj zastavi da se spremi"
+            few: "greške ne dozvoljavaju ovoj zastavi da se spremi"
+            other: "greške ne dozvoljavaju ovoj zastavi da se spremi"
+      new:
+        creating: Stvori zastavu
+    activity:
+      show:
+        action: Akcija
+        actions:
+          block: Blokirano
+          hide: Skriveno
+          restore: Obnovljeno
+        by: Uređeno od
+        content: Sadržaj
+        filter: Prikaži
+        filters:
+          all: Svi
+          on_comments: Komentari
+          on_debates: Rasprave
+          on_proposals: Prijedlozi
+          on_users: Krosnici
+          on_system_emails: Emailovi sustava
+        title: Aktivnosti moderatora
+        type: Tip
+        no_activity: Ne postoje moderatorske aktivnosti.
+    budgets:
+      index:
+        title: Participativni budžeti
+        new_link: Stvori novi budžet
+        filter: Filter
+        filters:
+          open: Otvoreno
+          finished: Dovršeno
+        budget_investments: Upravljaj projektima
+        table_name: Ime
+        table_phase: Faza
+        table_investments: Investicije
+        table_edit_groups: Tematska grupa
+        table_edit_budget: Uredi
+        table_admin_ballots: Glasački listići
+        edit_groups: Uredi naslov grupa
+        edit_budget: Uredi budžet
+        admin_ballots: Glasovi admina
+        no_budgets: "Ne postoje budžeti."
+      create:
+        notice: Novi participativni budžet je stvoren uspješno!
+      update:
+        notice: Participativni budžet je ažuriran uspješno
+      edit:
+        title: Uredi Participativni budžet
+        delete: Obriši budžet
+        phase: Faza
+        dates: Datumi
+        enabled: Omogućeno
+        actions: Akcije
+        edit_phase: Uredi fazu
+        active: Aktivirati
+        blank_dates: Datumi su prazni
+      destroy:
+        success_notice: Budžet je uspješno obrisan
+        unable_notice: Ne možete obrisati budžet koji ima povezane investicije
+        unable_notice_polls: Nemožete obrisati budžet koji ima povezane glasove
+      new:
+        title: Novi participativni budžet
+      winners:
+        calculate: Izračunaj Pobjedničke Investicije
+        calculated: Pobjednici se izračunavaju, potrebna je minuta.
+        recalculate: Ponovno Izračunaj Pobjedničke Investicije
+    budget_groups:
+      name: "Ime"
+      headings_name: "Naslovi"
+      headings_edit: "Uredi Naslove"
+      headings_manage: "Upravljaj naslovima"
+      max_votable_headings: "Maksimalni broj naslova za koje korisnik može glasati"
+      no_groups: "Nema grupa."
+      amount:
+        one: "Postoji 1 grupa"
+        few: "Postoje %{count} grupa"
+        other: "Postoje %{count} grupa"
+      create:
+        notice: "Grupa je uspješno stvorena!"
+      update:
+        notice: "Grupa je ažurirana uspješno"
+      destroy:
+        success_notice: "Grupa je uspješno obrisana"
+        unable_notice: "Ne možete obrisati Grupu koja ima povezane naslove"
+      form:
+        create: "Stvori novu grupu"
+        edit: "Uredi grupu"
+        name: "Ime grupe"
+        submit: "Spremi grupu"
+      index:
+        back: "Idi nazad na budžet"
+    budget_headings:
+      name: "Ime"
+      no_headings: "Ne postoje naslovi."
+      amount:
+        one: "Postoji 1 naslov"
+        few: "Postoje %{count} naslovi"
+        other: "Postoje %{count} naslovi"
+      create:
+        notice: "Naslov je uspješno stvoren!"
+      update:
+        notice: "Naslov je uspješno ažuriran"
+      destroy:
+        success_notice: "Naslov je uspješno obrisan"
+        unable_notice: "Ne možete obrisati Naslov koji ima povezane investicije"
+      form:
+        name: "Ime naslova"
+        amount: "Iznos"
+        population: "Populacija (neobavezno)"
+        population_info: "Naslov Budžeta kod populacijskog polja koje se koristi za Statističke svrhe je na kraju budžeta kako bi se pokazao svaki Naslov koji predstavlja područje s postotkom populacije koja je glasala. Polje je neobavezno, pa ga možete ostaviti praznom ako se ne odnosi."
+        latitude: "Visina (neobaveno)"
+        longitude: "Širina (neobavezno)"
+        coordinates_info: "Ako je visina i širina dostupna stranica investicija za ovaj naslov će uključiti mapu. Ova mapa će biti centrirana uz korištenje ovih koordinata."
+        allow_content_block: "Dopusti blokiranje sadržaja"
+        content_blocks_info: "Ako je omogućeno blokiranje sadržaja, vi ćete moći stvoriti poseban sadržaj je povezan s ovim naslovom od sekcije Postave > Prilagodi blokove sadržaja. Ovaj sadržaj će se pojaviti na investicijskoj stranici ovog naslova."
+        create: "Stvori novi naslov"
+        edit: "Uredi naslov"
+        submit: "Spremi naslov"
+      index:
+        back: "Idi nazad na grupu"
+    budget_phases:
+      edit:
+        start_date: Datum početka
+        end_date: Datum završetka
+        summary: Sašetak
+        summary_help_text: Ovaj tekst će vas informirati korisnika o fazi. Kako biste to mogući tokom faze koja nije aktivirana odaberite kućicu dolje
+        description: Opis
+        description_help_text: Ovaj tekst će se pojavljiti u naslovu kada je ova faza aktivna
+        enabled: Faza omogućena
+        enabled_help_text: Ova faza će biti javna u fazama budžetiranja, a tako i aktivna za ostale svrhe
+        save_changes: Spremi promjene
+    budget_investments:
+      index:
+        heading_filter_all: Svi naslovi
+        administrator_filter_all: Svi administratori
+        valuator_filter_all: Svi procjenitelji
+        tags_filter_all: Sve oznake
+        advanced_filters: Napredni filtri
+        placeholder: Pretraži projetke
+        filters:
+          all: Svi
+          without_admin: Bez dodjeljenog admina
+          without_valuator: Bez dodijeljenog procjenitelja
+          under_valuation: U toku procjene
+          valuation_finished: Evaluacija dovršena
+          feasible: Izvodljivo
+          selected: Odabrano
+          undecided: Nije odlučeno
+          unfeasible: Nevažeč
+          min_total_supports: Minimalna potpora
+          max_total_supports: Maksimalna potpora
+          winners: Pobjednici
+        list:
+          supports: Potpore
+          valuation_group: Grupa procjenitelja
+          author_username: Korisničko ime autora
+      show:
+        group: Grupa
+        valuator_groups: "Grupa procjenitelja"
+      edit:
+        user_groups: "Grupe"
+    milestones:
+      index:
+        no_milestones: "Nemate definirane ključne ciljeve"
+        milestone: Ključni ciljevi
+        new_milestone: Stvori novi ključni cilj
+      new:
+        creating: Stvori ključni cilj
+      edit:
+        title: Uredi ključne ciljeve
+      create:
+        notice: Novi ključni ciljevi stvoreni su uspješno!
+      update:
+        notice: Ključni ciljevi uspješno ažurirani
+      delete:
+        notice: Ključni ciljevi uspješno obrisani
+    dashboard:
+      actions:
+        index:
+          required_supports: Potrebne potpore
+    legislation:
+      processes:
+        proposals:
+          orders:
+            supports: Ukupne potpore
+      proposals:
+        index:
+          supports: Ukupne potpore
+    segment_recipient:
+      proposal_authors: Prijedlozi autora
+    valuators:
+      index:
+        valuator_groups: "Grupe procjenitelja"
+        group: "Grupa"
+        no_group: "Nema grupe"
+      show:
+        group: "Grupa"
+        no_group: "Bez grupe"
+    valuator_groups:
+      index:
+        title: "Grupa procjenitelja"
+        new: "Stvori grupu procjenitelja"
+        no_groups: "Ne postoji grupa procjenitelja"
+      show:
+        title: "Grupa procjenitelja: %{group}"
+        no_valuators: "Ne postoje procjenitelji koji su dio ove grupe"
+      form:
+        name: "Ime grupe"
+        new: "Stvori grupu procjenitelja"
+        edit: "Spremi grupu procjenitelja"
+    questions:
+      show:
+        author: Autor
+    proposals:
+      index:
+        author: Autor
+        milestones: Ključni ciljevi
+    shared:
+      author: Autor
+    signature_sheets:
+      author: Autor
+      show:
+        author: Autor
